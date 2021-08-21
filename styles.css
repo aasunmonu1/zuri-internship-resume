@@ -202,15 +202,7 @@ section > div {
     margin-right: 32px;
   }
 
-  .header-list li a.active {
-    color: var(--primary-color);
-  }
-
-  .header-list li a:hover {
-    text-decoration: underline;
-  }
-
-  .header-list li a:active,
+  .header-list li a.active,
   .header-list li a:hover {
     color: var(--primary-color);
     text-decoration: underline solid var(--primary-color);
