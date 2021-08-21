@@ -138,14 +138,15 @@ section > div {
   fill: var(--primary-color);
 }
 
-.about > div {
-  display: flex;
-}
-
 .about-image {
   margin-right: 40px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
+.about-image img {
+  width: 100%;
+}
 .about p:first-child {
   margin-bottom: 10px;
 }
@@ -153,10 +154,6 @@ section > div {
 .education,
 .experience {
   margin-top: 40px;
-}
-
-.details {
-  display: flex;
 }
 
 .details-title {
@@ -212,9 +209,21 @@ section > div {
   .header-list li a:hover {
     text-decoration: underline;
   }
-  /* .header-list li a:active, .header-list li a:hover {
-      color: var(--primary-color);
-  } */
+
+  .header-list li a:active,
+  .header-list li a:hover {
+    color: var(--primary-color);
+    text-decoration: underline solid var(--primary-color);
+  }
+
+  .about > div {
+    display: flex;
+    align-items: center;
+  }
+
+  .details {
+    display: flex;
+  }
 }
 
 @media (max-width: 768px) {
@@ -224,5 +233,24 @@ section > div {
 
   .nav-lg {
     display: none;
+  }
+
+  .about-image {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+  }
+
+  .about-text {
+    margin-top: 40px;
+  }
+
+  .details-title {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .details-list {
+    width: 100%;
   }
 }
