@@ -253,4 +253,25 @@ section > div {
   .details-list {
     width: 100%;
   }
+
+  #header-list-sm {
+    position: fixed;
+    right: 2rem;
+    top: 0;
+    padding: 1rem 3rem 3rem;
+    height: 100vh;
+    background: var(--color-black);
+  }
+
+  #header-list-sm .close {
+    margin-bottom: 1rem;
+  }
+
+  #header-list-sm ul li {
+    margin-bottom: 1.5rem;
+  }
+
+  #header-list-sm .contact {
+    margin-top: 2rem;
+  }
 }
